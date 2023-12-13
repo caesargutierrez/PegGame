@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD642DB42B21931D00F16FB5 /* PegGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD642DB32B21931D00F16FB5 /* PegGameApp.swift */; };
+		CD642DB62B21931D00F16FB5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD642DB52B21931D00F16FB5 /* ContentView.swift */; };
+		CD642DB82B21932100F16FB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD642DB72B21932100F16FB5 /* Assets.xcassets */; };
+		CD642DBB2B21932100F16FB5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD642DBA2B21932100F16FB5 /* Preview Assets.xcassets */; };
+		CD642DBD2B21932100F16FB5 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD642DBC2B21932100F16FB5 /* Persistence.swift */; };
+		CD642DC02B21932100F16FB5 /* PegGame.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CD642DBE2B21932100F16FB5 /* PegGame.xcdatamodeld */; };
+		CD642DCA2B21932100F16FB5 /* PegGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD642DC92B21932100F16FB5 /* PegGameTests.swift */; };
+		CD642DD42B21932100F16FB5 /* PegGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD642DD32B21932100F16FB5 /* PegGameUITests.swift */; };
+		CD642DD62B21932100F16FB5 /* PegGameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD642DD52B21932100F16FB5 /* PegGameUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD642DC62B21932100F16FB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD642DA82B21931D00F16FB5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD642DAF2B21931D00F16FB5;
+			remoteInfo = PegGame;
+		};
+		CD642DD02B21932100F16FB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD642DA82B21931D00F16FB5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD642DAF2B21931D00F16FB5;
+			remoteInfo = PegGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD642DB02B21931D00F16FB5 /* PegGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PegGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD642DB32B21931D00F16FB5 /* PegGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PegGameApp.swift; sourceTree = "<group>"; };
+		CD642DB52B21931D00F16FB5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CD642DB72B21932100F16FB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD642DBA2B21932100F16FB5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CD642DBC2B21932100F16FB5 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		CD642DBF2B21932100F16FB5 /* PegGame.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PegGame.xcdatamodel; sourceTree = "<group>"; };
+		CD642DC52B21932100F16FB5 /* PegGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PegGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD642DC92B21932100F16FB5 /* PegGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PegGameTests.swift; sourceTree = "<group>"; };
+		CD642DCF2B21932100F16FB5 /* PegGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PegGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD642DD32B21932100F16FB5 /* PegGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PegGameUITests.swift; sourceTree = "<group>"; };
+		CD642DD52B21932100F16FB5 /* PegGameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PegGameUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD642DAD2B21931D00F16FB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD642DC22B21932100F16FB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD642DCC2B21932100F16FB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD642DA72B21931D00F16FB5 = {
+			isa = PBXGroup;
+			children = (
+				CD642DB22B21931D00F16FB5 /* PegGame */,
+				CD642DC82B21932100F16FB5 /* PegGameTests */,
+				CD642DD22B21932100F16FB5 /* PegGameUITests */,
+				CD642DB12B21931D00F16FB5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD642DB12B21931D00F16FB5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD642DB02B21931D00F16FB5 /* PegGame.app */,
+				CD642DC52B21932100F16FB5 /* PegGameTests.xctest */,
+				CD642DCF2B21932100F16FB5 /* PegGameUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD642DB22B21931D00F16FB5 /* PegGame */ = {
+			isa = PBXGroup;
+			children = (
+				CD642DB32B21931D00F16FB5 /* PegGameApp.swift */,
+				CD642DB52B21931D00F16FB5 /* ContentView.swift */,
+				CD642DB72B21932100F16FB5 /* Assets.xcassets */,
+				CD642DBC2B21932100F16FB5 /* Persistence.swift */,
+				CD642DBE2B21932100F16FB5 /* PegGame.xcdatamodeld */,
+				CD642DB92B21932100F16FB5 /* Preview Content */,
+			);
+			path = PegGame;
+			sourceTree = "<group>";
+		};
+		CD642DB92B21932100F16FB5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CD642DBA2B21932100F16FB5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CD642DC82B21932100F16FB5 /* PegGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD642DC92B21932100F16FB5 /* PegGameTests.swift */,
+			);
+			path = PegGameTests;
+			sourceTree = "<group>";
+		};
+		CD642DD22B21932100F16FB5 /* PegGameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CD642DD32B21932100F16FB5 /* PegGameUITests.swift */,
+				CD642DD52B21932100F16FB5 /* PegGameUITestsLaunchTests.swift */,
+			);
+			path = PegGameUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD642DAF2B21931D00F16FB5 /* PegGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD642DD92B21932100F16FB5 /* Build configuration list for PBXNativeTarget "PegGame" */;
+			buildPhases = (
+				CD642DAC2B21931D00F16FB5 /* Sources */,
+				CD642DAD2B21931D00F16FB5 /* Frameworks */,
+				CD642DAE2B21931D00F16FB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PegGame;
+			productName = PegGame;
+			productReference = CD642DB02B21931D00F16FB5 /* PegGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD642DC42B21932100F16FB5 /* PegGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD642DDC2B21932100F16FB5 /* Build configuration list for PBXNativeTarget "PegGameTests" */;
+			buildPhases = (
+				CD642DC12B21932100F16FB5 /* Sources */,
+				CD642DC22B21932100F16FB5 /* Frameworks */,
+				CD642DC32B21932100F16FB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD642DC72B21932100F16FB5 /* PBXTargetDependency */,
+			);
+			name = PegGameTests;
+			productName = PegGameTests;
+			productReference = CD642DC52B21932100F16FB5 /* PegGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CD642DCE2B21932100F16FB5 /* PegGameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD642DDF2B21932100F16FB5 /* Build configuration list for PBXNativeTarget "PegGameUITests" */;
+			buildPhases = (
+				CD642DCB2B21932100F16FB5 /* Sources */,
+				CD642DCC2B21932100F16FB5 /* Frameworks */,
+				CD642DCD2B21932100F16FB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD642DD12B21932100F16FB5 /* PBXTargetDependency */,
+			);
+			name = PegGameUITests;
+			productName = PegGameUITests;
+			productReference = CD642DCF2B21932100F16FB5 /* PegGameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD642DA82B21931D00F16FB5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					CD642DAF2B21931D00F16FB5 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					CD642DC42B21932100F16FB5 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = CD642DAF2B21931D00F16FB5;
+					};
+					CD642DCE2B21932100F16FB5 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = CD642DAF2B21931D00F16FB5;
+					};
+				};
+			};
+			buildConfigurationList = CD642DAB2B21931D00F16FB5 /* Build configuration list for PBXProject "PegGame" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD642DA72B21931D00F16FB5;
+			productRefGroup = CD642DB12B21931D00F16FB5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD642DAF2B21931D00F16FB5 /* PegGame */,
+				CD642DC42B21932100F16FB5 /* PegGameTests */,
+				CD642DCE2B21932100F16FB5 /* PegGameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD642DAE2B21931D00F16FB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD642DBB2B21932100F16FB5 /* Preview Assets.xcassets in Resources */,
+				CD642DB82B21932100F16FB5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD642DC32B21932100F16FB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD642DCD2B21932100F16FB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD642DAC2B21931D00F16FB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD642DBD2B21932100F16FB5 /* Persistence.swift in Sources */,
+				CD642DB62B21931D00F16FB5 /* ContentView.swift in Sources */,
+				CD642DC02B21932100F16FB5 /* PegGame.xcdatamodeld in Sources */,
+				CD642DB42B21931D00F16FB5 /* PegGameApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD642DC12B21932100F16FB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD642DCA2B21932100F16FB5 /* PegGameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD642DCB2B21932100F16FB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD642DD42B21932100F16FB5 /* PegGameUITests.swift in Sources */,
+				CD642DD62B21932100F16FB5 /* PegGameUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD642DC72B21932100F16FB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD642DAF2B21931D00F16FB5 /* PegGame */;
+			targetProxy = CD642DC62B21932100F16FB5 /* PBXContainerItemProxy */;
+		};
+		CD642DD12B21932100F16FB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD642DAF2B21931D00F16FB5 /* PegGame */;
+			targetProxy = CD642DD02B21932100F16FB5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CD642DD72B21932100F16FB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CD642DD82B21932100F16FB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD642DDA2B21932100F16FB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PegGame/Preview Content\"";
+				DEVELOPMENT_TEAM = DV7EY9S3QY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = caesargutierrez.PegGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD642DDB2B21932100F16FB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PegGame/Preview Content\"";
+				DEVELOPMENT_TEAM = DV7EY9S3QY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = caesargutierrez.PegGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CD642DDD2B21932100F16FB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DV7EY9S3QY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = caesargutierrez.PegGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PegGame.app/PegGame";
+			};
+			name = Debug;
+		};
+		CD642DDE2B21932100F16FB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DV7EY9S3QY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = caesargutierrez.PegGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PegGame.app/PegGame";
+			};
+			name = Release;
+		};
+		CD642DE02B21932100F16FB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DV7EY9S3QY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = caesargutierrez.PegGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PegGame;
+			};
+			name = Debug;
+		};
+		CD642DE12B21932100F16FB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DV7EY9S3QY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = caesargutierrez.PegGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PegGame;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD642DAB2B21931D00F16FB5 /* Build configuration list for PBXProject "PegGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD642DD72B21932100F16FB5 /* Debug */,
+				CD642DD82B21932100F16FB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD642DD92B21932100F16FB5 /* Build configuration list for PBXNativeTarget "PegGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD642DDA2B21932100F16FB5 /* Debug */,
+				CD642DDB2B21932100F16FB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD642DDC2B21932100F16FB5 /* Build configuration list for PBXNativeTarget "PegGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD642DDD2B21932100F16FB5 /* Debug */,
+				CD642DDE2B21932100F16FB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD642DDF2B21932100F16FB5 /* Build configuration list for PBXNativeTarget "PegGameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD642DE02B21932100F16FB5 /* Debug */,
+				CD642DE12B21932100F16FB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CD642DBE2B21932100F16FB5 /* PegGame.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CD642DBF2B21932100F16FB5 /* PegGame.xcdatamodel */,
+			);
+			currentVersion = CD642DBF2B21932100F16FB5 /* PegGame.xcdatamodel */;
+			path = PegGame.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CD642DA82B21931D00F16FB5 /* Project object */;
+}
