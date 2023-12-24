@@ -15,8 +15,11 @@ struct ContentView: View {
         sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
         animation: .default)
     private var items: FetchedResults<Item>
-    
+    init() {
+        pegGame = SetUpTrianglePeg()
+    }
     let rows = [GridItem(), GridItem(),GridItem(),GridItem(),GridItem(),]
+    let pegGame : [[PegView]]
     
     var body: some View {
         NavigationView {
@@ -24,46 +27,43 @@ struct ContentView: View {
             {
                 Color.black.ignoresSafeArea()
                 VStack{
-                    HStack
-                    {
-                        Peg(circleColor: .blue)
+                    ForEach(pegGame, id: \.self) { pegLane in
+                        HStack{
+                            ForEach(pegLane, id: \.self) { peg in
+                               peg
+                            }
+                        }
                     }
-                    HStack
-                    {
-                        Peg(circleColor: .blue)
-                        Peg(circleColor: .blue)
-                    }
-                    HStack
-                    {
-                        Peg(circleColor: .blue)
-                        Peg(circleColor: .blue)
-                        Peg(circleColor: .blue)
-                    }
-                    HStack
-                    {
-                        Peg(circleColor: .blue)
-                        Peg(circleColor: .blue)
-                        Peg(circleColor: .blue)
-                        Peg(circleColor: .blue)
-                    }
-                    HStack
-                    {
-                        Peg(circleColor: .blue)
-                        Peg(circleColor: .blue)
-                        Peg(circleColor: .blue)
-                        Peg(circleColor: .blue)
-                        Peg(circleColor: .blue)
-                    }
+                    
                 }
             }
         }
     }
 }
 
+func RandomColor () -> Color {
+    let colors: [Color] = [.blue, .red, .yellow, .white]
+    let randomIndex = Int.random(in: 0..<colors.count)
+    return colors[randomIndex]
+}
+func SetUpTrianglePeg() -> [[PegView]] {
+    var pegGame: [[PegView]] = []
+    for row in 0...5 {
+        var pegLane: [PegView] = []
+        for peg in 0..<row{
+            let pegView = PegView(circleColor: RandomColor() ,row: row, col: peg)
+            pegLane.append(pegView)
+        }
+        pegGame.append(pegLane)
+    }
+    return pegGame
+}
 
-struct Peg: View {
+struct PegView: View, Hashable {
     var squareColor = Color.black
     var circleColor: Color
+    var row: Int
+    var col: Int
     
     var body: some View {
         // Square with Circle
@@ -76,6 +76,7 @@ struct Peg: View {
                 .frame(width: 50, height: 50)
         }
     }
+   
 }
 
 
