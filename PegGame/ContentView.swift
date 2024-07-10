@@ -9,15 +9,12 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
-//    @Environment(\.managedObjectContext) private var viewContext
-//    
-//    @FetchRequest(
-//        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
-//        animation: .default)
-//    private var items: FetchedResults<Item>
+    
     init() {
         pegGame = SetUpTrianglePeg()
     }
+    
+//    Triangle Peg Game
     let rows = [GridItem(), GridItem(),GridItem(),GridItem(),GridItem(),]
     var pegGame : [[Peg]]
     
@@ -74,7 +71,7 @@ func SetUpTrianglePeg() -> [[Peg]] {
     }
     return pegGame
 }
-
+// View
 struct PegView: View
 {
     @ObservedObject var peg: Peg
@@ -102,7 +99,7 @@ struct PegView: View
     }
    
 }
-
+// Peg Object
 class Peg: Identifiable, Hashable, ObservableObject
 {
     static func == (lhs: Peg, rhs: Peg) -> Bool {
@@ -126,8 +123,6 @@ class Peg: Identifiable, Hashable, ObservableObject
     }
     
 }
-
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
