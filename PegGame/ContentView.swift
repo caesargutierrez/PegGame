@@ -42,9 +42,16 @@ struct ContentView: View {
             }
         }
     }
+    
     private func SetSelectedPeg(pegView: PegView)
     {
         print("TAPPED")
+        print(pegView.peg.Position())
+//        Can't select a cleared slot.
+        if (pegView.peg.isCleared)
+        {
+            return
+        }
         selectedPegView?.peg.isSelected = false
         selectedPegView = pegView
         // We Know it is not nill by now, we just assigned it.
@@ -69,6 +76,10 @@ func SetUpTrianglePeg() -> [[Peg]] {
         }
         pegGame.append(pegLane)
     }
+//FIXME:   Set top peg as cleared as default for now.
+    pegGame[1][0].isCleared = true
+    print(pegGame[1][0].Position())
+
     return pegGame
 }
 // View
@@ -91,8 +102,14 @@ struct PegView: View
                     .fill(.orange)
                     .frame(width: 65, height: 65)
             }
+            if (peg.isCleared)
+            {
+                Circle()
+                    .fill(.green)
+                    .frame(width: 60, height: 65)
+            }
             Circle()
-                .fill(peg.circleColor)
+                .fill(peg.isCleared ? .black : peg.circleColor)
                 .frame(width: 50, height: 50)
                     
         }
@@ -114,12 +131,16 @@ class Peg: Identifiable, Hashable, ObservableObject
     var circleColor = RandomColor()
     var row: Int
     var col: Int
+    @Published var isCleared = false
     @Published var isSelected = false
     init(row: Int, col: Int)
     {
         self.row = row
         self.col = col
         id = UUID()
+    }
+    public func Position() -> String {
+        return "\(col)-\(row)"
     }
     
 }
