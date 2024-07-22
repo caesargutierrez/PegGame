@@ -10,15 +10,12 @@ import CoreData
 
 struct ContentView: View {
     
-    init() {
-        pegGame = SetUpTrianglePeg()
+    init() 
+    {
+        pegGameManager = PegGameManager()
     }
     
-//    Triangle Peg Game
-    let rows = [GridItem(), GridItem(),GridItem(),GridItem(),GridItem(),]
-    var pegGame : [[Peg]]
-    
-    @State var selectedPegView: PegView?
+    var pegGameManager : PegGameManager
     
     var body: some View {
         NavigationView {
@@ -26,13 +23,13 @@ struct ContentView: View {
             {
                 Color.black.ignoresSafeArea()
                 VStack{
-                    ForEach(pegGame, id: \.self) { pegLane in
+                    ForEach(pegGameManager.PegGame, id: \.self) { pegLane in
                         HStack{
                             ForEach(pegLane, id: \.self) { peg in
                                 let pegView = PegView(peg: peg)
                                 pegView
                                     .onTapGesture {
-                                        SetSelectedPeg(pegView: pegView)
+                                        pegGameManager.SetSelectedPeg(peg: pegView.peg)
                                     }
                             }
                         }
@@ -42,21 +39,6 @@ struct ContentView: View {
             }
         }
     }
-    
-    private func SetSelectedPeg(pegView: PegView)
-    {
-        print("TAPPED")
-        print(pegView.peg.Position())
-//        Can't select a cleared slot.
-        if (pegView.peg.isCleared)
-        {
-            return
-        }
-        selectedPegView?.peg.isSelected = false
-        selectedPegView = pegView
-        // We Know it is not nill by now, we just assigned it.
-        selectedPegView!.peg.isSelected = true
-    }
 }
 
 func RandomColor () -> Color {
@@ -65,23 +47,7 @@ func RandomColor () -> Color {
     return colors[randomIndex]
 }
 
-func SetUpTrianglePeg() -> [[Peg]] {
-    var pegGame: [[Peg]] = []
-    for row in 0...5 {
-        var pegLane: [Peg] = []
-        for col in 0..<row{
-            let peg = Peg(row: row,col: col)
-            pegLane.append(peg)
-            
-        }
-        pegGame.append(pegLane)
-    }
-//FIXME:   Set top peg as cleared as default for now.
-    pegGame[1][0].isCleared = true
-    print(pegGame[1][0].Position())
 
-    return pegGame
-}
 // View
 struct PegView: View
 {
@@ -116,34 +82,7 @@ struct PegView: View
     }
    
 }
-// Peg Object
-class Peg: Identifiable, Hashable, ObservableObject
-{
-    static func == (lhs: Peg, rhs: Peg) -> Bool {
-        return lhs.id == rhs.id
-        
-    }
-    func hash(into hasher: inout Hasher) {
-        hasher.combine(ObjectIdentifier(self))
-    }
-    var id: UUID
-    var squareColor = Color.black
-    var circleColor = RandomColor()
-    var row: Int
-    var col: Int
-    @Published var isCleared = false
-    @Published var isSelected = false
-    init(row: Int, col: Int)
-    {
-        self.row = row
-        self.col = col
-        id = UUID()
-    }
-    public func Position() -> String {
-        return "\(col)-\(row)"
-    }
-    
-}
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "A2C070DF-05ED-4C90-A8AD-ACBDB917CA9C"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2F88970E-E3DD-439E-8FFD-187986D3E74E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PegGame/PegGameManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "SetSelectedPeg(peg:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2F88970E-E3DD-439E-8FFD-187986D3E74E - fe8c43c4b2ebdb43"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PegGame.PegGameManager.SetSelectedPeg(peg: PegGame.Peg) -&gt; ()"
+                  moduleName = "PegGame"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/caesargutierrez/Documents/Projects/PegGame/PegGame/PegGameManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30">
+               </Location>
+               <Location
+                  uuid = "2F88970E-E3DD-439E-8FFD-187986D3E74E - fe8c43c4b2ebdb43"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PegGame.PegGameManager.SetSelectedPeg(peg: PegGame.Peg) -&gt; ()"
+                  moduleName = "PegGame"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/caesargutierrez/Documents/Projects/PegGame/PegGame/PegGameManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

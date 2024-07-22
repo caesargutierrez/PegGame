@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD559BA02C4C5AAC0035AE2E /* PegGameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD559B9F2C4C5AAC0035AE2E /* PegGameManager.swift */; };
 		CD642DB42B21931D00F16FB5 /* PegGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD642DB32B21931D00F16FB5 /* PegGameApp.swift */; };
 		CD642DB62B21931D00F16FB5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD642DB52B21931D00F16FB5 /* ContentView.swift */; };
 		CD642DB82B21932100F16FB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD642DB72B21932100F16FB5 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD559B9F2C4C5AAC0035AE2E /* PegGameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PegGameManager.swift; sourceTree = "<group>"; };
 		CD642DB02B21931D00F16FB5 /* PegGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PegGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD642DB32B21931D00F16FB5 /* PegGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PegGameApp.swift; sourceTree = "<group>"; };
 		CD642DB52B21931D00F16FB5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				CD642DBC2B21932100F16FB5 /* Persistence.swift */,
 				CD642DBE2B21932100F16FB5 /* PegGame.xcdatamodeld */,
 				CD642DB92B21932100F16FB5 /* Preview Content */,
+				CD559B9F2C4C5AAC0035AE2E /* PegGameManager.swift */,
 			);
 			path = PegGame;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD559BA02C4C5AAC0035AE2E /* PegGameManager.swift in Sources */,
 				CD642DBD2B21932100F16FB5 /* Persistence.swift in Sources */,
 				CD642DB62B21931D00F16FB5 /* ContentView.swift in Sources */,
 				CD642DC02B21932100F16FB5 /* PegGame.xcdatamodeld in Sources */,
